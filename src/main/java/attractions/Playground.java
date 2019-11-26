@@ -1,9 +1,10 @@
 package attractions;
 
+import behaviours.IReviewed;
 import behaviours.ISecurity;
 import people.Visitor;
 
-public class Playground extends Attraction implements ISecurity {
+public class Playground extends Attraction implements ISecurity, IReviewed {
 
     public Playground(String name, int rating) {
         super(name, rating);
@@ -16,5 +17,13 @@ public class Playground extends Attraction implements ISecurity {
             return false;
         }
 
+    }
+
+    public String getName(){
+        return super.name;
+    }
+
+    public int getRating(){
+        return super.rating;
     }
 }

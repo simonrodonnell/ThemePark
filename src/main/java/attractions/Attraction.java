@@ -1,9 +1,9 @@
 package attractions;
 
 public abstract class Attraction {
-    private String name;
-    private int rating;
-    private int visitCount;
+    protected String name;
+    protected int rating;
+    protected int visitCount;
 
     public Attraction(String name, int rating) {
         this.name = name;
@@ -11,13 +11,13 @@ public abstract class Attraction {
         this.visitCount = 0;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getRating() {
-        return rating;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public int getRating() {
+//        return rating;
+//    }
 
     public int getVisitCount() {
         return visitCount;
